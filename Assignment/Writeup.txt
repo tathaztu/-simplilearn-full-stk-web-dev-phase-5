@@ -1,0 +1,8 @@
+AWS + Assignment
+----------------
+1. Create EC2 Instance on AWS
+2. Connect to EC2 Instance using SSH
+3. Cloning the Repo. on EC2
+4. Building the App. Image using Docker
+5. Running the Image using Docker
+6. Access the Application on Browser using public IPv4 address
