@@ -1,0 +1,5 @@
+*.arf
+Docker/
+Docker.dmg
+.DS_Store
+Eclipse Workspace - Phase 5/

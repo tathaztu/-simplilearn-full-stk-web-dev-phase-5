@@ -1,0 +1,174 @@
+1. Functional Testing
+    a. Manual Testing
+    b. Automation Testing
+2. Non-Functional Testing
+    a. Performance
+    b. Accessibility 
+    c. API Testing
+    d. Vulnerability
+    e. Security Testing
+
+
+Selenium Web Driver
+
+1. Chrome, FireFox, Safari, Edge
+2. Browser specific Driver
+3. Selenium Library
+
+Local Chrome version is  104.0.5112.79 
+
+XPath - X stands for XML
+-----
+Absolute XPath - from the beginning of the page till the end or destination element
+/html/body/div/div/....
+This is too big and complicated
+
+Relative XPath starts with a //
+e.g. //a[@class="login"]
+An XPath may return a unique element or multiple elements
+
+A better idea in case there is no unique identifier is to get the nearest unique element
+//nav[@class="links-right"]
+
+We can also go to the child from the nearest parent
+//target/childElement
+
+Overall basically we need to narrow down the search results
+
+A target of * scans all elements
+
+//*[text='Recent Logins']
+Recent Logins
+
+
+Relative Xpath
+	//tagname
+	//tag[@attr='value']
+	//tag[@attr='value']/childTag
+	//*[text()='Facebook helps you connect and share with the people in your life.']
+	//h2
+	//*[contains(text(),'connect and share')]
+	//*[starts-with(text(),'Facebook helps')]
+	//div[contains(@id,'Footer')]
+	//a[@class='logo']/img
+	//a[@class='logo']/parent::*
+	//a[@class='logo']/following-sibling::nav[1]
+	//a[@class='logo']/following::div[1]
+	//a[@class='logo']/preceding::div
+	//a[@class='logo']/ancestor::div
+
+
+-----------------------------
+
+CSS Selectors
+
+1. tag#id
+    e.g. input#email
+2. tag.class
+    e.g. input.email
+3. tag[attr=val]
+    e.g. input[name='email']
+
+
+------------------------------
+
+
+There are 2 ways it can be done
+
+//table[@id='customers']/tbody/tr[1]/th
+//table[@id='customers']/tbody/tr[2]/td
+
+Qs. does the index start from 1? normally we come across 0 based 
+indexes....
+
+
+For all participants : 
+the browser is automatically displaying the new 
+tab after the button click
+does it not mean that the new window handle will be automatically assigned to the selenium framework?
+
+
+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
+
+
+http://localhost:8080/job/Simplilearn%20GitHub%201/build?token=12345
+
+
+
+Docker creates containers using images in a place called "Docker Hub"
+
+Servers like EC2 should have Docker installed as a pre-requisite
+Download a copy of a Docker images
+EC2 instance creates a Container using the respective image
+
+1. docker --version
+2. docker images
+3. docker run hello-world
+4. docker ps -a
+show all processes and containers
+
+5. docker run --name helloworldcontainer hello-world
+
+6. docker rm <container id>
+7. docker rmi <image name>
+8. docker pull ubuntu
+9. docker run -it --name ubuntucontainer1 ubuntu bash
+10. docker ps
+11. docker exec -it <container id> bash
+12. docker stop <container id>
+13. docker start <container id>
+14. docker run -d --name webcontainer -p 90:80 nginx:latest
+15. docker cp Hello.html 4254ba9dce22:/usr/share/nginx/html/index.html
+	docker cp <source-file-name> <container-id>:/usr/share/nginx/html/<destination-file-name>
+16. docker logs <container-id>
+17. docker commit 4254ba9dce22 nginxcustom
+18. docker login
+19. docker create --name webcontainer1 -p 88:80 nginx:latest
+20. docker start webcontainer1
+21. docker run -it --name mysqlcontainer -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root mysql bash
+    docker run -d -p 3306:3306 --name mysqlcontainer -e MYSQL_ROOT_PASSWORD=root mysql
+22. docker tag nginxcustom tatha135/nginxcustom:v1
+23. docker push tatha135/nginxcustom:v1
+24. mysql -u root -p
+25. docker swarm init
+26. docker swarm join --token 
+27. docker service create -p 82:80 --name webcontainerservice nginx
+28. docker node ls
+29. docker service ls
+30. docker service scale webcontainerservice=5
+31. docker build -t simplejavaimage .
+32. docker build -t projectimage .
+33. docker run -d --name projectcontainer -p 8080:8080 projectimage
+
+mvn clean package
+java -jar target\websocket-demo-0.0.1-SNAPSHOT.jar
+
+
+AWS + Assignment
+----------------
+
+1. Create EC2 Instance on AWS
+2. Connect to EC2 Instance using SSH
+3. Cloning the Repo. on EC2
+4. Building the App. Image using Docker
+5. Running the Image using Docker
+6. Access the Application on Browser using public IPv4 address
+
+
+
+sudo yum update -y
+sudo -i
+
+
+52.90.34.145
+
+
+
+ 1  amazon-linux-extras install java-openjdk11
+    2  wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
+    3  tar xvf apache-maven-3.8.6-bin.tar.gz
+    5  mv apache-maven-3.8.6 /usr/local/apache-maven
+    6  export M2_HOME=/usr/local/apache-maven
+    7  export M2=$M2_HOME/bin
+    8  export PATH=$M2:$PATH
+    9  source ~/.bashrc

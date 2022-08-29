@@ -1,0 +1,228 @@
+{
+  "id": "f04fbbfc-c43b-4d5f-9ee6-255aaa88abf0",
+  "version": "2.0",
+  "name": "Simplilearn",
+  "url": "https://www.simplilearn.com/",
+  "tests": [{
+    "id": "557cf635-d576-43fe-8baa-f76287753b0c",
+    "name": "Test Login",
+    "commands": [{
+      "id": "9ef66a58-4f0e-441b-8de2-90626abe919c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.simplilearn.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03a59275-eb1b-4b39-845a-2dcb8d83fe2a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "300ffc60-8885-4fab-af03-f8a0e072242c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//header[@id='topHeader']/div/nav[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lms.simplilearn.com')]", "xpath:href"],
+        ["xpath=//nav[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd7b982b-a1d7-43b2-af5f-47778ba020a3",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_login",
+      "targets": [
+        ["name=user_login", "name"],
+        ["css=.email", "css:finder"],
+        ["xpath=//input[@name='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "yours.tatha@gmail.com"
+    }, {
+      "id": "356a784c-b16f-4f0c-9486-76afc049c35f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=user_pwd", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "!!nVaSV5dVb.Sb4"
+    }, {
+      "id": "ce7a0fd2-17ec-400f-9034-128ae611d184",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_login",
+      "targets": [
+        ["name=user_login", "name"],
+        ["css=.email", "css:finder"],
+        ["xpath=//input[@name='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "abc@def.com"
+    }, {
+      "id": "db29adf2-8011-48a5-acd4-19047c095774",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "name=btn_login",
+      "targets": [
+        ["name=btn_login", "name"],
+        ["css=.btn-signup:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='btn_login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1426c142-72c6-4418-9e31-f7aae85b9ab4",
+      "comment": "",
+      "command": "click",
+      "target": "name=btn_login",
+      "targets": [
+        ["name=btn_login", "name"],
+        ["css=.btn-signup:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='btn_login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b4e09735-dd22-4ccb-8f3b-6c044c10066d",
+    "name": "Test Assert",
+    "commands": [{
+      "id": "9e8fbc6a-bbbb-4a08-a7a8-52d8f1fb27ae",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.simplilearn.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0fa0568-fcdf-4c87-990b-cdc5131d71cc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddb33e24-cec4-46ec-a7c8-cae1b9c9080e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//header[@id='topHeader']/div/nav[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://lms.simplilearn.com')]", "xpath:href"],
+        ["xpath=//nav[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3cbf78a-7af5-40a6-8a9a-f0f6bf51b87e",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_login",
+      "targets": [
+        ["name=user_login", "name"],
+        ["css=.email", "css:finder"],
+        ["xpath=//input[@name='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "yours.tatha@gmail.com"
+    }, {
+      "id": "c2c6b3c7-4b97-4cc1-8fa8-8f2f155cc5ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=user_pwd", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "!!nVaSV5dVb.Sb4"
+    }, {
+      "id": "3845750a-21c8-4568-91b0-59ae2f2f94dc",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_login",
+      "targets": [
+        ["name=user_login", "name"],
+        ["css=.email", "css:finder"],
+        ["xpath=//input[@name='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cce494e5-8e30-437a-bb9c-dffc0bde9f08",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_login",
+      "targets": [
+        ["name=user_login", "name"],
+        ["css=.email", "css:finder"],
+        ["xpath=//input[@name='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "abc@def.com"
+    }, {
+      "id": "8c9f8d45-4e35-47ca-9d8e-89b962d2f16f",
+      "comment": "",
+      "command": "click",
+      "target": "name=btn_login",
+      "targets": [
+        ["name=btn_login", "name"],
+        ["css=.btn-signup:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='btn_login']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16099f67-cff9-40b0-90bb-9dcb4154b827",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=msg_box",
+      "targets": [
+        ["id=msg_box", "id"],
+        ["css=#msg_box", "css:finder"],
+        ["xpath=//div[@id='msg_box']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "Incorrect Username or Password"
+    }]
+  }],
+  "suites": [{
+    "id": "694c6ba4-cad1-42d0-9d72-b467c6bfafd1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["557cf635-d576-43fe-8baa-f76287753b0c"]
+  }],
+  "urls": ["https://www.simplilearn.com/"],
+  "plugins": []
+}
